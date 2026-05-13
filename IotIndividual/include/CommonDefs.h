@@ -6,6 +6,9 @@
 
 // uncomment the following definition if the program should communicate via WIFI + MQTT
 //#define COMMS_VIA_WIFI_MQTT 1
+// uncomment the following line of code and the previous one to do round trip time testing on the MQTT+WiFi transmission.
+// The board will publish and subscribe to the same topic, measuring the time it takes from the publishing to the reception of the same message (the round trip time)
+//#define ONLY_TEST_MQTT_RTT  1
 
 // To comply with TTN rules and LoRa limitations, 60 seconds pause between LoRa transmissions
 #define LORA_MINIMUM_PAUSE_BETWEEN_TRANSMISSION_MILLIS 60000
